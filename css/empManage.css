@@ -184,3 +184,66 @@ error-output {
     font-style: italic;
     color: red;
 }
+@media only screen and (max-width: 960px) {
+    .form {
+        width: 85%;
+        padding: 44px 20px;
+        margin-top: 10px;
+    }
+    body {
+        font-size: 12pt;
+        width: 110%;
+    }
+    .row-content {
+        display: block;
+        width: auto;
+        float: none;
+        column-width: auto;
+    }
+    .profile-radio-content {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        flex-flow: wrap;
+    }
+}
+
+@media all and (min-device-width: 320px) and (max-device-width: 960px) {
+    .row {
+        flex-direction: column;
+    }
+    .uploadButton {
+        justify-content: flex-start;
+        font-size: 3em;
+    }
+    .profile-radio-button {
+        flex-flow: wrap;
+    }
+    .submit-reset {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        margin: 5px;
+        min-width: 70px;
+    }
+    .submitButton {
+        margin: 5px;
+        border-radius: 12px;
+        min-width: 70px;
+    }
+    .buttonParent {
+        align-items: flex-start;
+        margin: 5px;
+        border-radius: 12px;
+        min-width: 70px;
+    }
+    .cancelButton {
+        margin: 5px;
+        border-radius: 12px;
+        min-width: 70px;
+    }
+    .resetButton {
+        margin: 5px;
+        border-radius: 12px;
+        min-width: 70px;
+    }
+}
